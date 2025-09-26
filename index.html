@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materiały Edukacyjne</title>
+  </head>
+  <body>
+    <header class="layout-header flex justify-between shadow-[0_2px_4px_#062D5E1A]">
+      <a href="#">
+        <img src="assets/logo.svg" alt="logotyp">
+      </a>
+      <div class="dropdown-container flex gap-[10px] justify-end">
+        <img src="/assets/avatar.svg" alt="awatar użytkownika">
+        <button class="flex items-center gap-[10px]">
+          <h4 class="font-paragraph text-base text-[#585656]">Basia</h4>
+          <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L4 4L7 1" stroke="#202020" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <!-- user profile dropdown -->
+        <div class="dropdown">
+          <div class="bg-white min-w-[310px] p-5 rounded-md mt-[30px] shadow-[0_20px_50px_#062D5E1A]">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <img src="/assets/profile/kolekcje.svg" alt="ikona-kolakcje">
+                    <span>Moje kolekcje</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <img src="/assets/profile/download.svg" alt="ikona - downloads">
+                    <span>Pobrania</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <img src="/assets/profile/profile.svg" alt="ikona - edytuj dane">
+                    <span>Edytuj dane</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <img src="/assets/profile/payment.svg" alt="ikona - płatności">
+                    <span>Historia płatności</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <img src="/assets/profile/lock.svg" alt="ikona - hasło">
+                    <span>Zmień hasło</span>
+                  </a>
+                </li>
+              </ul>
+              <hr class="border-neutral-grey my-[10px]">
+              <a href="#" class="dropdown-item">
+                <img src="/assets/profile/lock.svg" alt="ikona - logout">
+                <span>Wyloguj się</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto">
+      <section class="px-3 sm:px-[55px] my-[30px]">
+        <header class="my-[30px]">
+          <div class="flex flex-col gap-5 md:flex-row justify-between">
+            <h1 class="font-header font-medium text-[26px]">
+              Materiały edukacyjne
+              <sup class="font-paragraph text-base text-[#919191]">(456)</sup>
+            </h1>
+            <!-- Search form -->
+            <form action="#" class="search-form min-w-[270px] shadow-[0_3px_20px_#062D5E1A]">
+              <input type="text" id="search" name="search" placeholder="Szukaj" class="font-paragraph text-base/5 grow-1">
+              <button type="submit">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="9" r="4" stroke="#202020" stroke-width="2"/>
+                  <line x1="11.7071" y1="12.2929" x2="15.5355" y2="16.1213" stroke="#202020" stroke-width="2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <h2 class="font-paragraph text-base text-[#585656] mt-5">
+            Wczesnoszkolni.pl - Materiały edukacyjne
+          </h2>
+        </header>
+        <div>
+          <div class="card-container">
+            <!-- category card 01-->
+            <div class="card">
+              <div class="card-logo">
+                <img src="/assets/owl.svg" alt="owl">
+              </div>
+              <!-- Animated button -->
+              <a href="#" class="card-btn flex gap-5 items-center">
+                <div class="p-[15px]">
+                  <div class="card-btn-bg bg-[#AD4EEC1A]"></div>
+                  <img src="/assets/pencil.svg" alt="ikona - pędzel" class="w-[30px] h-[30px]">
+                </div>
+                <h3 class="font-header text-xl font-medium mr-8">
+                  Karty pracy
+                </h3>
+              </a>
+            </div>
+            <!-- category card 02-->
+            <div class="card">
+              <div class="card-logo">
+                <img src="/assets/owl.svg" alt="owl">
+              </div>
+              <!-- Animated button -->
+              <a href="#" class="card-btn flex gap-5 items-center">
+                <div class="p-[15px]">
+                  <div class="card-btn-bg bg-[#4EA2EC1A]"></div>
+                  <img src="/assets/brush.svg" alt="ikona - pędzel" class="w-[30px] h-[30px]">
+                </div>
+                <h3 class="font-header text-xl font-medium mr-8">
+                  Inspiracje plastyczne
+                </h3>
+              </a>
+            </div>
+             <!-- category card 03-->
+            <div class="card">
+              <div class="card-logo">
+                <img src="/assets/owl.svg" alt="owl">
+              </div>
+              <!-- Animated button -->
+              <a href="#" class="card-btn flex gap-5 items-center">
+                <div class="p-[15px]">
+                  <div class="card-btn-bg bg-[#FF77001A]"></div>
+                  <img src="/assets/award.svg" alt="ikona - nagroda" class="w-[30px] h-[30px]">
+                </div>
+                <h3 class="font-header text-xl font-medium mr-8">
+                  Dyplomy i podziękowania
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

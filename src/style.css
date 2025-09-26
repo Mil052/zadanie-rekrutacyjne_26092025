@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-header: "Rubik", sans-serif;
+    --font-paragraph: "Nunito", sans-serif;
+
+    --color-neutral-grey: #686868;
+}
+
+@layer base {
+  body {
+    background-color: #F9FAFC;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .layout-header {
+    padding-inline: 12px;
+    padding-block: 9px;
+    background-color: white;
+    @variant md {
+      padding-inline: 20px;
+    }
+  }
+
+  .dropdown-container {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    visibility: hidden;
+    z-index: 10;
+  }
+
+  .dropdown-container:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    font-family: var(--font-paragraph);
+    color: var(--color-neutral-grey);
+    border-radius: var(--radius-md);
+  }
+
+  .dropdown-item:hover {
+    background-color: #F4F5F8;
+  }
+
+  .layout-body {
+    background-color: #F9FAFC;
+  }
+
+  .search-form {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 370px);
+    gap: 60px 30px;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .card-logo {
+    display: block;
+    height: 280px;
+    margin-bottom: 10px;
+    background-image: url("/assets/owl_bg.png");
+    background-repeat: no-repeat;
+    background-size: 370px;
+    background-position: center;
+    transition: background-size 400ms ease-in-out;
+    border-radius: 1rem;
+  }
+
+  .card-logo:hover {
+    background-size: 444px;
+  }
+
+  .card-btn {
+    position: relative;
+    align-self: start;
+  }
+
+  .card-btn-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    max-width: 60px;
+    border-radius: 30px;
+    transition: max-width 500ms ease-in-out;
+  }
+
+  .card-btn:hover .card-btn-bg {
+    max-width: 370px;
+  }
+
+}
+
+
+@media (prefers-color-scheme: light) {
+
+}
